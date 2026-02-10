@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CRM Admin Login</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="login-body">
+
+<div class="login-card">
+  <div class="login-icon">🔐</div>
+  <h2>Admin Login</h2>
+  <p class="login-sub">Secure CRM Access</p>
+
+  <div class="input-box">
+    <span>👤</span>
+    <input type="text" placeholder="Username" id="user">
+  </div>
+
+  <div class="input-box">
+    <span>🔑</span>
+    <input type="password" placeholder="Password" id="pass">
+  </div>
+
+  <button class="login-btn" onclick="login()">Login to Dashboard</button>
+</div>
+
+<script>
+function login(){
+  if(user.value==="admin" && pass.value==="admin123"){
+    window.location="index.html";
+  } else {
+    alert("Invalid Login");
+  }
+}
+</script>
+
+</body>
+</html>

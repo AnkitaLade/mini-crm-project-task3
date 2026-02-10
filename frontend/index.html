@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mini CRM</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="crm-header">
+  <h1>📋 Lead Management CRM</h1>
+  <p class="sub-title">Add • View • Edit • Delete Client Leads</p>
+</header>
+
+<section class="lead-form">
+  <h2>➕ Add New Lead</h2>
+
+  <input id="name" placeholder="👤 Client Name">
+  <input id="email" placeholder="📧 Email">
+  
+  <select id="status">
+    <option>New</option>
+    <option>Contacted</option>
+    <option>Converted</option>
+  </select>
+
+  <textarea id="notes" placeholder="📝 Notes / Follow-up"></textarea>
+
+  <button class="add-btn" onclick="addLead()">➕ Add Lead</button>
+</section>
+
+<section class="leads">
+  <h2>📋 All Leads</h2>
+  <div id="leadList" class="lead-grid"></div>
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>
